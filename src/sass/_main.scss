@@ -1,0 +1,35 @@
+$baseFontSize: 16px;
+
+@function pxToRem($val) {
+  $remSize: $val/$baseFontSize;
+  @return #{$remSize}rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  counter-reset: section08Counter;
+}
+
+input[type="submit"] {
+    -webkit-appearance: none;
+    border-radius: 0!important
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container--width {
+  max-width: pxToRem(1180px);
+  min-width: pxToRem(320px);
+  margin: auto;
+}

@@ -1,0 +1,204 @@
+.sec-10 {
+  padding-top: 1rem;
+  padding-bottom: 7.3rem;
+  background-image: url("img/sec-10/bg.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  .container-fluid {
+    padding: 0;
+  }
+  .row {
+    [class*=col-]:first-of-type {
+      padding-top: 9.5rem;
+    }
+    [class*=col-]:last-of-type {
+      padding-top: 12.9rem;
+    }
+  }
+
+  .sec-01__header-geolocation {
+    margin-bottom: 3.2rem;
+  }
+
+  .sec-01__form-text {
+    padding-right: 0;
+    margin-bottom: 4.4rem;
+  }
+
+  .main-title-container {
+    margin-bottom: 2.4rem;
+  }
+
+  .main-img-container {
+    padding-top: 14.1rem;
+    align-items: flex-end;
+    position: relative;
+    &::before {
+      display: block;
+      content: url("img/sec-10/copter.png");
+      position: absolute;
+      left: -7.8rem;
+      top: 1.8rem;
+    }
+    img {
+      margin-right: 2.6rem;
+      width: 460px;
+    }
+  }
+  .sec-01__btn {
+    z-index: 0;
+    width: 23rem;
+    margin: auto;
+  }
+}
+
+.sec-10__right-text {
+  font-family: GothaB;
+  font-size: pxToRem(20px);
+  line-height: pxToRem(25px);
+  position: relative;
+  &::before {
+    position: absolute;
+    left: -6.3rem;
+    bottom: -5.2rem;
+    display: block;
+    content: url("img/sec-10/arrow.png");
+  }
+  span {
+    color: #15b4af;
+  }
+}
+
+.sec-10__list-title {
+  font-family: GothaB;
+  font-size: pxToRem(20px);
+  line-height: pxToRem(25px);
+  padding-right: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.sec-10__list {
+  list-style: none;
+  padding-left: 1.3rem;
+}
+
+.sec-10__list-item {
+  font-family: GothaR;
+  font-size: 1rem;
+  line-height: pxToRem(25px);
+  position: relative;
+  margin-bottom: .5rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  &::before {
+    display: block;
+    content: "";
+    width: .4rem;
+    height: .4rem;
+    background-color: #15b4af;
+    position: absolute;
+    top: .5rem;
+    left: -1.3rem;
+  }
+  span {
+    font-family: GothaM;
+    color: #15b4af;
+  }
+}
+
+@media (max-width: 1199px) {
+  .sec-10 {
+    padding-bottom: 3.3rem;
+  }
+
+  .sec-10 .row [class*=col-]:first-of-type {
+    padding-top: 3.5rem;
+  }
+
+  .sec-10__list-title {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .sec-10__list-item:last-of-type {
+    padding-right: 11rem;
+  }
+
+  .sec-10__list {
+    padding-left: 11.3rem;
+  }
+
+  .sec-10 .main-img-container {
+    align-items: center;
+    padding-top: 5rem;
+    &::before {
+      left: 1.1rem;
+      top: -1.2rem;
+    }
+    img {
+      width: 400px;
+      margin-right: 0;
+      margin-left: 1rem;
+    }
+  }
+
+  .sec-10 .sec-01__header-geolocation {
+    display: none;
+  }
+
+  .sec-10 .row [class*=col-]:last-of-type {
+    padding-top: 4.9rem;
+  }
+
+  .sec-10 .sec-01__form-text {
+    padding: 0 10rem;
+    text-align: center;
+  }
+
+  .sec-10__right-text {
+    text-align: center;
+    br {
+      content: "";
+      &::after {
+        content: "";
+      }
+    }
+  }
+
+  .sec-10__right-text::before {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .sec-10__list {
+    padding-left: 3.7rem;
+  }
+
+  .sec-10__list-item:last-of-type {
+    padding-right: 1rem;
+  }
+
+  .sec-10 .main-img-container img {
+    width: 300px;
+  }
+
+  .sec-10 .sec-01__form-text {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  .sec-10__right-text {
+    font-size: 1.15rem;
+  }
+
+  .sec-10 .main-img-container::before {
+    content: url("img/sec-10/copter-mb.png");
+    left: 0.6rem;
+    top: 0.7rem;
+  }
+
+}

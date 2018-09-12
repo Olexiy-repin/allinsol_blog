@@ -1,0 +1,33 @@
+.sec-06 {
+  padding-top: 1rem;
+  position: relative;
+  &::before {
+    display: block;
+    content: "";
+    height: pxToRem(120px);
+    width: 1px;
+    background-color: #c23002;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+}
+
+.sec-06__title {
+  font-family: GothaB;
+  font-size: pxToRem(45px);
+  text-transform: uppercase;
+  line-height: pxToRem(50px);
+  text-align: center;
+}
+
+.sec-06__subtitle {
+  font-family: GothaB;
+  font-size: pxToRem(21px);
+  color: #545454;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: pxToRem(30px);
+  letter-spacing: 1.26px;
+}

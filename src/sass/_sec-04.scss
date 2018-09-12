@@ -1,0 +1,53 @@
+.sec-04 {
+  background-color: #1c1c1c;
+}
+
+.sec-04__title {
+  font-family: GothaB;
+  font-size: 19px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #0e0e0e;
+  padding-top: 1.4rem;
+  padding-bottom: 1.2rem;
+  margin-bottom: .4rem;
+}
+
+.sec-04__project-block {
+  background-color: #0e0e0e;
+  padding-top: 1.2rem;
+  padding-bottom: 1.1rem;
+  margin-bottom: .2rem;
+  &:first-of-type {
+    padding-top: .4rem;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.sec-04__project-block-title {
+  font-family: GothaB;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 1.3rem;
+  span {
+    display: block;
+    font-family: GothaR;
+  }
+}
+
+.sec-04__project-block-link {
+  display: block;
+  font-family: GothaB;
+  font-size: 12px;
+  text-align: center;
+  color: #9d2703;
+  img {
+    width: 15px;
+    margin-left: .8rem;
+  }
+}

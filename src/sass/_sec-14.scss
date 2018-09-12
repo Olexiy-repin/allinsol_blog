@@ -1,0 +1,136 @@
+.footer {
+  background-color: #393939;
+  padding-top: 2.4rem;
+  padding-bottom: 2.3rem;
+  .sec-01__header-menu-contact-container {
+    margin-left: 0;
+  }
+}
+
+.footer__container {
+  padding: 0 2.9rem 0 4.4rem;
+}
+
+.footer__list-item {
+  margin-bottom: .5rem;
+  a {
+    font-family: FuturaL;
+    font-size: pxToRem(13px);
+    color: #b1b1b1;
+    text-decoration: none;
+    &:hover {
+      transition: all .5s linear;
+      opacity: .5;
+    }
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.footer__text {
+  font-family: FuturaL;
+  font-size: pxToRem(13px);
+  color: #b1b1b1;
+  line-height: 1.4;
+  margin-bottom: 1.8rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.footer__block {
+  margin-bottom: 2.9rem;
+  &:last-of-type {
+    margin-bottom: 0;
+    display: flex;
+  }
+}
+
+.footer__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-right: 1.3rem;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding-bottom: 2.4rem;
+  }
+
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.9rem 0 2.9rem;
+  }
+
+  .footer__block {
+    margin-bottom: 0;
+    &:first-of-type {
+      width: 17%;
+    }
+    &:nth-of-type(2) {
+      width: 50%;
+    }
+    &:last-of-type {
+      width: 23%;
+    }
+  }
+
+  .footer__block {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding-top: 4.7rem;
+    padding-bottom: 4.9rem;
+    .sec-01__header-menu-contact-container {
+      margin-left: 0;
+      text-align: left;
+    }
+  }
+
+  .footer__list-item {
+    font-size: pxToRem(14px);
+  }
+
+  .footer__text {
+    font-size: pxToRem(14px);
+  }
+
+  .footer__container {
+    padding: 0 5.3rem;
+  }
+
+  .footer__list-item {
+    margin-bottom: .7rem;
+  }
+
+  .footer__block:nth-of-type(2) {
+    width: 38%;
+  }
+
+  .footer__block:last-of-type {
+    width: 28%;
+  }
+
+  .footer__text {
+    margin-bottom: 2.7rem;
+  }
+
+  .footer__social-link {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-right: 1.6rem;
+  }
+}

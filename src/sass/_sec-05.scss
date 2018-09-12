@@ -1,0 +1,150 @@
+.sec-05 {
+  padding-top: 8.3rem;
+  padding-bottom: 7.4rem;
+  background-image: url("img/sec-05/bg.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sec-05__title {
+  font-family: GothaB;
+  font-size: pxToRem(34px);
+  color: #fff;
+  line-height: pxToRem(43px);
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.sec-05__subtitle {
+  font-family: GothaB;
+  font-size: pxToRem(21px);
+  text-align: center;
+  background-color: #ffd27c;
+  text-transform: uppercase;
+  width: pxToRem(336px);
+  margin: auto;
+  padding: 0.6rem 0 0.5rem;
+  letter-spacing: 1.4px;
+  margin-bottom: 4.5rem;
+  position: relative;
+  &::after {
+    display: block;
+    content: "";
+    width: pxToRem(120px);
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -2.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: .3;
+  }
+}
+
+.sec-05__description {
+  font-family: OpenSB;
+  font-size: pxToRem(18px);
+  color: #fff;
+  letter-spacing: 1.08px;
+  text-align: center;
+  margin-bottom: 4.3rem;
+}
+
+.sec-05__card-container {
+  margin-bottom: 7.3rem;
+}
+
+
+.sec-05__card-row {
+  display: flex;
+  &:first-of-type {
+    margin-bottom: 2.2rem;
+    padding-bottom: 2.1rem;
+    border-bottom: 1px solid rgba(256,256,256, .3);
+  }
+}
+
+.sec-05__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  &::after {
+    display: block;
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: #fff;
+    opacity: .3;
+    position: absolute;
+    right: -.6rem;
+    top: 0;
+  }
+  &:first-of-type {
+    width: 23.1rem;
+  }
+  &:nth-of-type(2) {
+    width: 25.9rem;
+  }
+  &:last-of-type {
+    width: 22.9rem;
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.sec-05__card-img {
+  margin-bottom: 1.8rem;
+}
+
+.sec-05__card-title {
+  font-family: GothaB;
+  font-size: pxToRem(18px);
+  text-align: center;
+  text-transform: uppercase;
+  color: #c23002;
+  letter-spacing: 1.08px;
+  margin-bottom: 1rem;
+}
+
+.sec-05__card-text {
+  font-family: OpenR;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  line-height: pxToRem(24px);
+  span {
+    font-family: OpenB;
+  }
+}
+
+.sec-05__modal-btn-container {
+  text-align: center;
+}
+
+.sec-05__modal-btn-title {
+  font-family: GothaB;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .64px;
+  margin-bottom: 2rem;
+}
+
+.sec-05 {
+  .sec-01__modal-btn {
+    position: relative;
+    &::before {
+      display: block;
+      content: url("img/sec-05/btn-lines.png");
+      position: absolute;
+      top: -2.6rem;
+      left: -14.3rem;
+    }
+  }
+}

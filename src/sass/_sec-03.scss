@@ -1,0 +1,26 @@
+.sec-03 {
+  padding-top: 4.2rem;
+  padding-bottom: 2.9rem;
+}
+
+.sec-03__title {
+  font-family: GothaB;
+  font-size: pxToRem(19px);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.3rem;
+}
+
+.sec-03__theme-block {
+  font-family: GothaB;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  margin: auto;
+  background-color: #f4f4f4;
+  padding: .7rem 0;
+  margin-bottom: .9rem;
+}

@@ -1,0 +1,36 @@
+.footer {
+  padding-top: 1.6rem;
+  padding-bottom: 1.8rem;
+  background-color: #edeeee;
+  margin-top: 3.4rem;
+}
+
+.footer__block {
+  text-align: center;
+  margin-bottom: .5rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  img {
+    margin-bottom: .4rem;
+  }
+}
+
+.footer__link {
+  display: block;
+  font-family: GothaR;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #000;
+}
+
+.footer__social-link {
+  text-align: center;
+  display: block;
+}
+
+.footer__logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}

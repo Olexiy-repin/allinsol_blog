@@ -1,0 +1,125 @@
+.sec-02 {
+  padding-top: 1.7rem;
+  padding-bottom: 2rem;
+}
+
+.sec-02__article {
+  background-color: rgba(151, 151, 151, .1);
+  padding: .5rem;
+  padding-top: 1.2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 1.2rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.sec-02__article-title {
+  font-family: GothaM;
+  font-size: pxToRem(16px);
+  line-height: 1.2;
+  letter-spacing: .7px;
+  margin-bottom: 1.6rem;
+}
+
+.sec-02__article-img {
+  display: block;
+  width: 100%;
+  margin: auto;
+  margin-bottom: .5rem;
+}
+
+.sec-02__article-tag-container {
+  margin-bottom: .8rem;
+}
+
+.sec-02__article-tag {
+  font-family: GothaR;
+  font-size: pxToRem(10px);
+  color: #979797;
+}
+
+.sec-02__article-content {
+  font-family: GothaR;
+  font-size: pxToRem(13px);
+  line-height: 1.2;
+  letter-spacing: -.1px;
+  color: #363636;
+  margin-bottom: 1.5rem;
+}
+
+.sec-02__article-btn {
+  display: block;
+  font-family: GothaB;
+  font-size: pxToRem(12px);
+  color: #fff;
+  text-transform: uppercase;
+  width: pxToRem(273px);
+  margin: auto;
+  padding: .9rem 0;
+  background-color: #c23002;
+  text-align: center;
+}
+
+.sec-02__slider-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: pxToRem(254px);
+  margin: auto;
+  margin-top: 2.4rem;
+  position: relative;
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 2.4rem;
+    transform: translateY(-50%);
+    height: 1px;
+    width: 12.3rem;
+    background-color: #000;
+  }
+}
+
+.sec-02__count {
+  font-family: GothaB;
+  &:first-of-type {
+    font-size: pxToRem(22px);
+    color: #c23002;
+  }
+  &:last-of-type {
+    font-size: pxToRem(10px);
+    color: #000;
+  }
+}
+
+.sec-02 .owl-nav img {
+  width: pxToRem(25px);
+}
+
+.sec-02 .owl-nav {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+    bottom: -6rem;
+    left: 50%;
+    transform: translateX(-50%);
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: .3rem;
+    height: .3rem;
+    border-radius: 50%;
+    background-color: #000;
+    top: 44%;
+    transform: translateY(-50%);
+  }
+  .owl-prev {
+    margin-right: 1rem;
+  }
+  .owl-next {
+    margin-top: 1px;
+  }
+}
