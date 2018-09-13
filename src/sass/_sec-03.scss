@@ -54,3 +54,19 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+  .sec-03 {
+    padding-top: 10.3rem;
+  }
+
+  .sec-03__title {
+    font-size: pxToRem(41px);
+    margin-bottom: 3.4rem;
+  }
+
+  .sec-03__theme-block {
+    padding: 1rem 0;
+    margin-bottom: 2.8rem;
+  }
+}

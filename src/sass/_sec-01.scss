@@ -48,6 +48,10 @@
     text-transform: uppercase;
     color: #fff;
     margin-right: 1rem;
+    &:hover {
+      transition: all .5s linear;
+      color: #c03002;
+    }
     &:last-of-type {
       margin-right: 0;
     }
@@ -57,10 +61,47 @@
     font-family: GothaM;
     font-size: pxToRem(14px);
     color: #fff;
+    &:hover {
+      transition: all .5s linear;
+      color: #c03002;
+    }
   }
 
   .sec-01__title {
     font-size: pxToRem(22px);
     padding: 0 8.3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sec-01 {
+    padding-top: 10.7rem;
+    padding-bottom: 9.9rem;
+  }
+
+  .sec-01__menu-item {
+    font-size: pxToRem(15px);
+  }
+
+  .sec-01__telephone {
+    font-size: pxToRem(15px);
+  }
+
+  .sec-01__header {
+    padding: 1.8rem 2.2rem;
+  }
+
+  .sec-01__title {
+    font-size: pxToRem(37px);
+    line-height: 1.3;
+    padding: 0 11.6rem;
+  }
+
+  .sec-02__article-title {
+    font-size: pxToRem(23px);
+  }
+
+  .sec-02__article-content {
+    font-size: pxToRem(17px);
   }
 }

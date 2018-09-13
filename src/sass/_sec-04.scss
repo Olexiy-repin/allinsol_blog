@@ -87,7 +87,6 @@
     justify-content: center;
     background-color: #3f342e;
     width: 16%;
-    padding: 1rem 0;
     text-align: center;
     line-height: 1.2;
   }
@@ -97,5 +96,36 @@
     font-size: pxToRem(12px);
     text-transform: uppercase;
     color: #fff;
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+    &:hover {
+      transition: all .5s linear;
+      background-color: #c03002;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .sec-04 {
+    padding-top: 6.7rem;
+    padding-bottom: 7.9rem;
+  }
+
+  .sec-04__title {
+    font-size: pxToRem(37px);
+    margin-bottom: 2.2rem;
+  }
+
+  .sec-04__projects-container-desc {
+    width: 75%;
+  }
+
+  .sec-04__project-block {
+    width: 16.4%;
+  }
+
+  .sec-04__project-block-title {
+    padding: 1.4rem 0;
   }
 }

@@ -59,6 +59,10 @@
   padding: .9rem 0;
   background-color: #c23002;
   text-align: center;
+  &:hover {
+    transition: all .5s linear;
+    background-color: #3f342e;
+  }
 }
 
 .sec-02__slider-nav {
@@ -124,6 +128,18 @@
   }
 }
 
+.sec-02 {
+  .desc-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .sec-02__article:nth-of-type(n+7) {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   .sec-02__article-container {
     display: flex;
@@ -147,5 +163,108 @@
     right: 0 !important;
     left: auto;
     transform: translateX(0);
+  }
+}
+
+@media (min-width: 1200px) {
+  .sec-02 {
+    padding-top: 2.9rem;
+    .mob-btn {
+      display: none;
+    }
+
+    .desc-btn {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      font-size: 1rem;
+      width: 7.2rem;
+      padding: .7rem 0;
+    }
+  }
+
+  .sec-02 .container--width {
+    max-width: 87.75rem;
+  }
+
+  .sec-02 .slide {
+    padding: .5rem;
+  }
+
+  .sec-02__article {
+    width: 30%;
+    box-shadow: 0 0 11px 1px rgba(151, 151, 151, .5);
+    padding-top: 1.6rem;
+    padding-left: .9rem;
+    padding-bottom: .4rem;
+    margin-bottom: 3.2rem;
+    &:last-of-type {
+      margin-bottom: 3.2rem;
+    }
+    .sec-02__article-title {
+      margin-bottom: 2rem;
+    }
+    &:first-of-type {
+      width: 65%;
+      .sec-02__article-title {
+        padding-right: 2rem;
+      }
+    }
+  }
+
+  .sec-02__img-container {
+    position: relative;
+  }
+
+  .sec-02__article-tag {
+    font-size: pxToRem(12px);
+  }
+
+  .sec-02__article-img {
+    margin-bottom: 1rem;
+  }
+
+  .sec-02__article-tag-container {
+    margin-bottom: 1.3rem;
+  }
+
+  .sec-02__article-content {
+    margin-bottom: 0;
+  }
+
+  .sec-02__count {
+    &:first-of-type {
+      font-size: pxToRem(36px);
+    }
+    &:last-of-type {
+      font-size: pxToRem(14px);
+    }
+  }
+
+  .sec-02__slider-nav {
+    margin-top: 4.9rem;
+  }
+
+  .sec-02__slider-nav {
+    width: 25.875rem;
+    &::before {
+      left: 4rem;
+      height: 2px;
+      background-color: #757575;
+      width: 20rem;
+    }
+  }
+
+  .sec-02 .owl-nav {
+    bottom: -6.6rem;
+  }
+
+  .sec-02 .owl-nav img {
+    width: 1.6625rem;
+  }
+
+  .sec-02 .owl-nav .owl-prev {
+    margin-right: 2.9rem;
   }
 }

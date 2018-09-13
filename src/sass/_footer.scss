@@ -27,6 +27,10 @@
 .footer__social-link {
   text-align: center;
   display: block;
+  &:hover {
+    transition: all .3s linear;
+    opacity: .5;
+  }
 }
 
 .footer__logo-container {
@@ -60,5 +64,36 @@
 
   .footer__block {
     margin-bottom: 0;
+    &:hover {
+      transition: all .3s linear;
+      opacity: .5;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding: 4rem 1rem 6.5rem;
+    [class*=col-] {
+      justify-content: flex-start;
+    }
+    .container--width {
+      max-width: 100%;
+    }
+  }
+
+  .footer__logo-container:first-of-type {
+    margin-right: 9%;
+  }
+
+  .footer__block {
+    text-align: left;
+    margin-right: 10%;
+    align-self: flex-start;
+  }
+
+  .footer__social-link {
+    align-self: flex-start;
+    margin-left: 25.6%;
   }
 }
