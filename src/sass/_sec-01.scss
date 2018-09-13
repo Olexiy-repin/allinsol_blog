@@ -20,3 +20,47 @@
   line-height: 25px;
   color: #fff;
 }
+
+.sec-01__header {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sec-01 {
+    background-image: url("img/sec-01/bg-md.png");
+    padding-top: 8rem;
+  }
+
+  .sec-01__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    background-color: rgba(61, 51, 46, .5);
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+
+  .sec-01__menu-item {
+    font-family: GothaM;
+    font-size: pxToRem(14px);
+    text-transform: uppercase;
+    color: #fff;
+    margin-right: 1rem;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .sec-01__telephone {
+    font-family: GothaM;
+    font-size: pxToRem(14px);
+    color: #fff;
+  }
+
+  .sec-01__title {
+    font-size: pxToRem(22px);
+    padding: 0 8.3rem;
+  }
+}

@@ -24,3 +24,33 @@
   padding: .7rem 0;
   margin-bottom: .9rem;
 }
+
+@media (max-width: 767px) {
+  .sec-03__theme-block {
+    &:nth-of-type(n+5) {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .sec-03__title {
+    font-size: pxToRem(24px);
+    margin-bottom: 1.4rem;
+  }
+
+  .sec-03__theme-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .sec-03__theme-block {
+    width: 12%;
+    margin-bottom: 1rem;
+    &:nth-of-type(n+9) {
+      margin-bottom: 0;
+    }
+  }
+}

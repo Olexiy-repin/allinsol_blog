@@ -123,3 +123,29 @@
     margin-top: 1px;
   }
 }
+
+@media (min-width: 768px) {
+  .sec-02__article-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .sec-02__article {
+    width: 48%;
+    &:last-of-type {
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  .sec-02__slider-nav {
+    margin: 0;
+  }
+
+  .sec-02 .owl-nav {
+    bottom: -1.4rem;
+    right: 0 !important;
+    left: auto;
+    transform: translateX(0);
+  }
+}

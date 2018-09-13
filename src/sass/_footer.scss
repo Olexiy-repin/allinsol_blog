@@ -33,4 +33,32 @@
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+  &:first-of-type {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 1.6rem 1rem 1.8rem;
+    [class*=col-] {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .footer__logo-container {
+    margin: 0;
+    &:first-of-type {
+      display: block;
+    }
+    &:last-of-type {
+      display: none;
+    }
+  }
+
+  .footer__block {
+    margin-bottom: 0;
+  }
 }
