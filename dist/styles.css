@@ -307,6 +307,15 @@ ul {
 	padding-top: 1.2rem;
 	padding-bottom: 2rem;
 	margin-bottom: 1.2rem;
+	position: relative;
+	cursor: pointer;
+}
+
+.sec-02__article:hover {
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
+	-webkit-transform: scale(0.95);
+	transform: scale(0.95);
 }
 
 .sec-02__article:last-of-type {

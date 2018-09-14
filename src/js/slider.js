@@ -52,6 +52,16 @@
           });
 })();
 
+$('.sec-02__article').on('click', function (event) {
+    let articleBtn = $(this).find('.sec-02__article-btn.desc-btn');
+    let articleHref = articleBtn[0].href;
+
+    window.open(
+      articleHref,
+      '_blank'
+    );
+});
+
 // (() => {
 //   $(".sec-04__slider").owlCarousel({
 //    items : 1,

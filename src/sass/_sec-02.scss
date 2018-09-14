@@ -9,6 +9,12 @@
   padding-top: 1.2rem;
   padding-bottom: 2rem;
   margin-bottom: 1.2rem;
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    transition: all .5s linear;
+    transform: scale(.95);
+  }
   &:last-of-type {
     margin-bottom: 0;
   }
