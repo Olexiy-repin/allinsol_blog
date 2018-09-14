@@ -22,7 +22,7 @@
   <!-- /OPG -->
 
   <!-- FAVICON IMG -->
-  <!-- <link rel="shortcut icon" href="img/favicon.png" type="image/png"> -->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
   <!-- /FAVICON IMG -->
 
   <link rel="stylesheet" href="bootstrap-grid.css">
@@ -36,6 +36,19 @@
       <div class="sec-01__logo-container">
         <img src="img/sec-01/logo.png" alt="logotype" class="sec-01__logo">
       </div>
+      <div class="menu-container"><button class="hamburger"><svg class="menu-logo"><use xlink:href="img/sec-01/hamburger.svg#icon-menu"></use></svg></button> <button class="cross" style="display: none;"><svg class="close-logo"><use xlink:href="img/sec-01/hamburger.svg#icon-cancel"></use></svg></button>
+          <div class="menu" style="display: none;">
+            <div class="sec-01__logo-container">
+              <img src="img/sec-01/logo.png" alt="logotype" class="sec-01__logo">
+            </div>
+            <ul class="menu__list">
+              <li class="menu__item"><a href="#" class="sec-01__menu-item">о компании</a></li>
+              <li class="menu__item"><a href="#" class="sec-01__menu-item">кейсы</a></li>
+              <li class="menu__item"><a href="#" class="sec-01__menu-item">продукты</a></li>
+              <li class="menu__item"><a href="#" class="sec-01__menu-item">бизнес консультант</a></li>
+            </ul>
+          </div>
+        </div>
       <div class="sec-01__menu-container">
         <a href="#" class="sec-01__menu-item">о компании</a>
         <a href="#" class="sec-01__menu-item">кейсы</a>
@@ -702,6 +715,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
+  <script src="js/burger.js"></script>
   <!-- <script src="js/main.js"></script> -->
   <script src="js/modal.js"></script>
   <script src="js/slider.js"></script>
